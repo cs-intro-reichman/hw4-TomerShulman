@@ -35,9 +35,9 @@ public class KeywordsDetector {
         if (str1.length()<str2.length()){
             return false;
         }
-        boolean iscontain= true;
         int Shortlength= str2.length();
         for (int i = 0; i < str1.length()-Shortlength; i++) {
+            boolean iscontain= true;
             for (int j = 0; j < Shortlength; j++) {
                 if(str1.charAt(i+j)!=str2.charAt(j)){
                     iscontain=false;
